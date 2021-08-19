@@ -17,10 +17,10 @@ function App() {
   };
 
   React.useEffect(() => {
-    fetch("http://localhost:3000/users.json")
+    fetch("https://ayushrana182.github.io/assessment/users.json")
       .then((resp) => resp.json())
       .then((u) => {
-        fetch("http://localhost:3000/subscriptions.json")
+        fetch("https://ayushrana182.github.io/assessment/subscriptions.json")
           .then((resp) => resp.json())
           .then((s) => {
             setOptions([
